@@ -47,8 +47,8 @@
                                     </td>
                               </table>
                            </span>
-                           <br>
-                           <input class="btn btn-block btn-primary" type="button" value="Sign In" onclick="Login()">
+                           <br><br><div class="clear-fix"></a>
+                           <a href="vaildation/home.html"><input class="btn btn-block btn-primary" type="button" value="Sign In" onclick="Login()"></a>
                         </form>
                         <hr>
                         <span class="pull-right"> <a href="#"> Forgot Password?</a> </span>
@@ -71,17 +71,5 @@
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
       <script src="js/elements.js"></script> 
-      <SCRIPT LANGUAGE="JavaScript">
-         function Login(){
-         var done=0;
-         var username=document.login.username.value;
-         username=username.toLowerCase();
-         var password=document.login.password.value;
-         password=password.toLowerCase();
-         if (username=="user" && password=="user") { window.location="vaildation/home.html"; done=1; }
-         if (done==0) { alert("Sorry you have entered wrong credentials. Please contact Administrator. "); }
-         
-         }
-      </SCRIPT>
    </body>
 </html>
